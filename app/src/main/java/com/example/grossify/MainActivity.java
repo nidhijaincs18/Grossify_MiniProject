@@ -1,4 +1,8 @@
 package com.example.grossify;
 
-public class MainActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class MainActivity extends AppCompatActivity {
+
+
 }

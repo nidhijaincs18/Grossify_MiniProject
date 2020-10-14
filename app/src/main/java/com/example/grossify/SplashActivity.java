@@ -41,6 +41,7 @@ public class SplashActivity extends Activity {
         logo.setAnimation(bottom_anim);
         slogan.setAnimation(bottom_anim);
 
+
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
