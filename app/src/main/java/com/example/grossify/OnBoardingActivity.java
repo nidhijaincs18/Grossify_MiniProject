@@ -39,6 +39,12 @@ public class OnBoardingActivity extends AppCompatActivity {
 
                 mNextBtn.setText("Next");
                 mBackBtn.setText("");
+                mNextBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mSlideViewPager.setCurrentItem((mCurrentPage + 1));
+                    }
+                });
             }
             else if (position==mDots.length-1) {
                 mNextBtn.setEnabled(true);
@@ -47,6 +53,7 @@ public class OnBoardingActivity extends AppCompatActivity {
 
                 mNextBtn.setText("Finish");
                 mBackBtn.setText("Back");
+
                 mNextBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -56,13 +63,25 @@ public class OnBoardingActivity extends AppCompatActivity {
                 });
 
             }
-            else{
+            else {
                 mNextBtn.setEnabled(true);
                 mBackBtn.setEnabled(true);
                 mBackBtn.setVisibility(View.VISIBLE);
 
                 mNextBtn.setText("Next");
                 mBackBtn.setText("Back");
+                mNextBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mSlideViewPager.setCurrentItem((mCurrentPage + 1));
+                    }
+                });
+                mBackBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        mSlideViewPager.setCurrentItem((mCurrentPage - 1));
+                    }
+                });
             }
         }
 
@@ -107,6 +126,8 @@ public class OnBoardingActivity extends AppCompatActivity {
 
         sliderAdapter = new SliderAdapter(this);
         mSlideViewPager.setAdapter(sliderAdapter);
+
+        mBackBtn.setVisibility(View.INVISIBLE);
 
         addDotsIndicator(0);
         mSlideViewPager.addOnPageChangeListener(viewListener);
