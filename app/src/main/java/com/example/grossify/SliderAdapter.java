@@ -1,6 +1,5 @@
 package com.example.grossify;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,7 +10,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
-import androidx.viewpager.widget.ViewPager;
 
 public class SliderAdapter extends PagerAdapter {
     Context context;
@@ -40,7 +38,7 @@ public class SliderAdapter extends PagerAdapter {
             "Shop from over 18,000 local stores to your doorsteps.",
             "Save your time by ordering your daily needs on a single click",
             "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
-            "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+            "Pick up delivery at your door and enjoy Groceries"
     };
 
     @Override
