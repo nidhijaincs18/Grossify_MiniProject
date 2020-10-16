@@ -37,7 +37,7 @@ public class SliderAdapter extends PagerAdapter {
     public String[] slide_desc = {
             "Shop from over 18,000 local stores to your doorsteps.",
             "Save your time by ordering your daily needs on a single click",
-            "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum",
+            "Easiest and Safest way to make payments for your Groceries.",
             "Pick up delivery at your door and enjoy Groceries"
     };
 

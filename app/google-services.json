@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "340000006615",
+    "firebase_url": "https://grossify-bf6b7.firebaseio.com",
+    "project_id": "grossify-bf6b7",
+    "storage_bucket": "grossify-bf6b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340000006615:android:cad48d26f9be1ebee0eb92",
+        "android_client_info": {
+          "package_name": "com.example.grossify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340000006615-5p2bucmvek88b3kcu639spaa5cof9q7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDR_Xn__rGqNNOdXdjZeREeBkUCFBarXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340000006615-5p2bucmvek88b3kcu639spaa5cof9q7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
