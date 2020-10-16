@@ -64,6 +64,18 @@
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:counterMaxLength="15"
+                android:hint="UserName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
     </LinearLayout>
 
