@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".OnBoardingActivity"></activity>
+        <activity android:name=".WelcomeSignUpPage"></activity>
         <activity android:name=".LoginPage"></activity>
 
         <meta-data

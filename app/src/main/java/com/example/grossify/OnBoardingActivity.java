@@ -57,7 +57,7 @@ public class OnBoardingActivity extends AppCompatActivity {
                 mNextBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(getApplicationContext(), LoginPage.class);
+                        Intent intent = new Intent(getApplicationContext(), WelcomeSignUpPage.class);
                         startActivity(intent);
                     }
                 });
@@ -147,7 +147,7 @@ public class OnBoardingActivity extends AppCompatActivity {
         mSkipBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), LoginPage.class);
+                Intent intent = new Intent(getApplicationContext(), WelcomeSignUpPage.class);
                 startActivity(intent);
             }
         });

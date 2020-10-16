@@ -9,8 +9,10 @@
         android:id="@+id/supermarket_logo"
         android:layout_width="158dp"
         android:layout_height="105dp"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/supermarket" />
@@ -21,11 +23,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="136dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="136dp"
         android:fontFamily="@font/lobster"
         android:text="Welcome,"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="36sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/supermarket_logo" />
 
@@ -33,20 +38,24 @@
         android:id="@+id/sign_up_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
         android:layout_marginTop="8dp"
         android:text="SignUp to start your new Journey"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="367dp"
-        android:layout_height="327dp"
+        android:layout_width="341dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
         android:orientation="vertical"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_up_text">
@@ -59,7 +68,7 @@
             <com.google.android.material.textfield.TextInputEditText
 
                 android:layout_width="match_parent"
-                android:layout_height="64dp"
+                android:layout_height="58dp"
                 android:hint="Full Name"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -69,22 +78,9 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/user_name"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
-                android:layout_height="64dp"
-                android:counterMaxLength="15"
-                android:hint="UserName" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.textfield.TextInputEditText
-
-                android:layout_width="match_parent"
-                android:layout_height="64dp"
+                android:layout_height="58dp"
                 android:hint="Email Address"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -97,7 +93,7 @@
             <com.google.android.material.textfield.TextInputEditText
 
                 android:layout_width="match_parent"
-                android:layout_height="64dp"
+                android:layout_height="58dp"
                 android:hint="Phone Number"
                 android:inputType="phone" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -110,7 +106,7 @@
             <com.google.android.material.textfield.TextInputEditText
 
                 android:layout_width="match_parent"
-                android:layout_height="64dp"
+                android:layout_height="58dp"
                 android:hint="Password"
                 android:inputType="textWebPassword" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -119,11 +115,14 @@
 
     <Button
         android:id="@+id/signup_btn"
-        android:layout_width="367dp"
-        android:layout_height="58dp"
+        android:layout_width="328dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/rounded_button"
         android:text="Sign Up"
+        android:textAlignment="center"
         android:textColor="#FAF8F8"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -132,9 +131,11 @@
 
     <Button
         android:id="@+id/login_btn"
-        android:layout_width="359dp"
-        android:layout_height="58dp"
+        android:layout_width="323dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
         android:background="@android:color/transparent"
         android:text="Already have an Account? LOGIN"
         app:layout_constraintEnd_toEndOf="parent"
