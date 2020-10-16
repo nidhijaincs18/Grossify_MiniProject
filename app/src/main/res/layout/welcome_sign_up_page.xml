@@ -130,5 +130,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="359dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:text="Already have an Account? LOGIN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signup_btn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
