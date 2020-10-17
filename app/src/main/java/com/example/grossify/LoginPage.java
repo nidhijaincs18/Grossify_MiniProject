@@ -39,6 +39,14 @@ public class LoginPage extends AppCompatActivity {
         doNotHaveAccount = findViewById(R.id.sign_up);
         signUpLink = findViewById(R.id.sign_up_link);
 
+        logIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), VerifyPhoneNumber.class);
+                startActivity(intent);
+            }
+        });
+
 
         signUpLink.setOnClickListener(new View.OnClickListener() {
             @Override

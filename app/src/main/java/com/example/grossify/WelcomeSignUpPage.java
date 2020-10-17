@@ -62,6 +62,10 @@ public class WelcomeSignUpPage extends AppCompatActivity {
 
 
                 reference.child(regPhone).setValue(helperClass);
+
+                Intent intent = new Intent(getApplicationContext(), VerifyPhoneNumber.class);
+                intent.putExtra("phoneNo", regPhone);
+                startActivity(intent);
             }
         });
     }

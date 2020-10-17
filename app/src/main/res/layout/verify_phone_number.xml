@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/co"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C O"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/de"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="D E"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/verification_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Verification"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/verification_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enter One Time Password sent to your Phone Number"
+        android:textAlignment="center"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/otp_by_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="6"
+        android:inputType="number"
+        android:padding="10dp"
+        android:text="Enter OTP" />
+
+    <Button
+        android:id="@+id/verify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_button"
+        android:text="Verify"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:indeterminate="false" />
+</LinearLayout>
