@@ -49,6 +49,13 @@ public class WelcomeSignUpPage extends AppCompatActivity {
                 reference = rootNode.getReference("users");
                 //Get the values
 
+                String regName = name.getEditText().getText().toString();
+                String regEmail = email.getEditText().getText().toString();
+                String regPhone = phone.getEditText().getText().toString();
+                String regPassword = password.getEditText().getText().toString();
+
+                UserHelperClass helperClass = new UserHelperClass(regName, regEmail, regPhone, regPassword);
+
 
                 reference.setValue("First Data");
             }
