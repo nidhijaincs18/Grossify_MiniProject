@@ -47,6 +47,10 @@ public class WelcomeSignUpPage extends AppCompatActivity {
             public void onClick(View view) {
                 rootNode = FirebaseDatabase.getInstance();
                 reference = rootNode.getReference("users");
+                if (!validateName() | !validateEmail() | !validatePhone() | !validatePassword()) {
+                    return;
+                }
+
                 //Get the values
 
                 String regName = name.getEditText().getText().toString();
@@ -57,8 +61,72 @@ public class WelcomeSignUpPage extends AppCompatActivity {
                 UserHelperClass helperClass = new UserHelperClass(regName, regEmail, regPhone, regPassword);
 
 
-                reference.setValue("First Data");
+                reference.child(regPhone).setValue(helperClass);
             }
         });
+    }
+
+    private boolean validateName() {
+        String value = name.getEditText().getText().toString();
+        if (value.isEmpty()) {
+            name.setError("Field cannot be empty");
+            return false;
+        } else {
+            name.setError(null);
+            name.setErrorEnabled(false);
+            return true;
+        }
+    }
+
+    private boolean validateEmail() {
+        String value = email.getEditText().getText().toString();
+        String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        if (value.isEmpty()) {
+            email.setError("Field cannot be empty");
+            return false;
+        } else if (!value.matches(emailPattern)) {
+            email.setError("Invalid Email Address");
+            return false;
+        } else {
+            email.setError(null);
+            email.setErrorEnabled(false);
+            return true;
+        }
+    }
+
+    private boolean validatePhone() {
+        String value = phone.getEditText().getText().toString();
+
+        if (value.isEmpty()) {
+            phone.setError("Field cannot be empty");
+            return false;
+        } else {
+            phone.setError(null);
+            phone.setErrorEnabled(false);
+            return true;
+        }
+    }
+
+    private boolean validatePassword() {
+        String value = password.getEditText().getText().toString();
+        String passwordValidation = "^" +
+                "(?=.*[0-9])" +         //at least 1 digit
+                "(?=.*[a-z])" +         //at least 1 lower case letter
+                "(?=.*[A-Z])" +         //at least 1 upper case letter
+                "(?=.*[a-zA-Z])" +      //any letter
+                "(?=.*[@#$%^&+=])" +    //at least 1 special character
+                ".{4,}" +               //at least 4 characters
+                "$";
+        if (value.isEmpty()) {
+            password.setError("Field cannot be empty");
+            return false;
+        } else if (!value.matches(passwordValidation)) {
+            password.setError("Password is too weak");
+            return false;
+        } else {
+            password.setError(null);
+            password.setErrorEnabled(false);
+            return true;
+        }
     }
 }
