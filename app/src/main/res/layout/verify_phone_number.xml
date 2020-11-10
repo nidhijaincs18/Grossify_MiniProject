@@ -51,7 +51,7 @@
         android:ems="6"
         android:inputType="number"
         android:padding="10dp"
-        android:text="Enter OTP" />
+        android:hint="Enter OTP" />
 
     <Button
         android:id="@+id/verify_btn"

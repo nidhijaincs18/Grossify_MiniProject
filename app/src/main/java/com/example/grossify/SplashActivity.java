@@ -12,9 +12,7 @@ import android.widget.TextView;
 
 
 public class SplashActivity extends Activity {
-
     private static int SPLASH_SCREEN = 5000;
-
     //Variables
     Animation logo_anim, bottom_anim;
     ImageView image;
@@ -30,8 +28,6 @@ public class SplashActivity extends Activity {
         //Animation
         logo_anim = AnimationUtils.loadAnimation(this,R.anim.logo_animation);
         bottom_anim = AnimationUtils.loadAnimation(this, R.anim.logo_bottom_anim);
-
-
         //Hooks
         image = findViewById(R.id.imageView);
         logo = findViewById(R.id.grossify);
