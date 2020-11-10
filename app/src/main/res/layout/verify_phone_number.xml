@@ -9,6 +9,7 @@
         android:id="@+id/co"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:text="C O"
         android:textAlignment="center"
         android:textColor="#000000"
