@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Grossify</string>
+    <string name="label">The Gross App to Shop online your daily needs </string>
+
     <string name="save_time">Save Time</string>
     <string name="fast_delivery">Fast Delivery</string>
     <string name="todo">TODO</string>
